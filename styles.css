@@ -821,8 +821,7 @@ details p {
   }
 
   .chip-one {
-    top: 20%;
-    right: 5%;
+    display: none;
   }
 
   .chip-two {
