@@ -1,15 +1,18 @@
 :root {
-  --ink: #111316;
-  --muted: #5f6670;
-  --paper: #f7f5ef;
+  --ink: #183028;
+  --muted: #64756c;
+  --paper: #f5f8ef;
   --white: #ffffff;
-  --line: rgba(17, 19, 22, 0.12);
-  --gold: #c99b47;
-  --olive: #42584b;
-  --clay: #a85f3f;
-  --night: #161b20;
-  --night-soft: #232a31;
-  --shadow: 0 24px 70px rgba(17, 19, 22, 0.16);
+  --line: rgba(24, 48, 40, 0.13);
+  --gold: #d6a94f;
+  --olive: #55735f;
+  --olive-bright: #7ea176;
+  --mint: #dcebd7;
+  --leaf: #2d5a43;
+  --clay: #b66c4b;
+  --night: #254132;
+  --night-soft: #315441;
+  --shadow: 0 24px 70px rgba(36, 74, 52, 0.15);
 }
 
 * {
@@ -56,8 +59,8 @@ a {
 
 .site-header.is-scrolled {
   color: var(--ink);
-  background: rgba(247, 245, 239, 0.92);
-  box-shadow: 0 10px 34px rgba(17, 19, 22, 0.08);
+  background: rgba(245, 248, 239, 0.92);
+  box-shadow: 0 10px 34px rgba(36, 74, 52, 0.09);
   backdrop-filter: blur(18px);
 }
 
@@ -111,6 +114,7 @@ a {
   height: 100%;
   object-fit: cover;
   z-index: -3;
+  filter: brightness(1.12) saturate(0.95);
   animation: slowZoom 18s ease-in-out infinite alternate;
 }
 
@@ -119,8 +123,8 @@ a {
   inset: 0;
   z-index: -2;
   background:
-    linear-gradient(90deg, rgba(12, 14, 16, 0.9) 0%, rgba(12, 14, 16, 0.66) 39%, rgba(12, 14, 16, 0.18) 100%),
-    linear-gradient(0deg, rgba(12, 14, 16, 0.76) 0%, rgba(12, 14, 16, 0.08) 44%);
+    linear-gradient(90deg, rgba(24, 67, 48, 0.74) 0%, rgba(65, 105, 72, 0.46) 44%, rgba(245, 248, 239, 0.06) 100%),
+    linear-gradient(0deg, rgba(24, 67, 48, 0.42) 0%, rgba(245, 248, 239, 0.1) 50%);
 }
 
 .hero-content {
@@ -151,7 +155,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 999px;
   color: rgba(255, 255, 255, 0.86);
-  background: rgba(17, 19, 22, 0.34);
+  background: rgba(36, 74, 52, 0.38);
   box-shadow: 0 18px 42px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(14px);
   font-size: 13px;
@@ -235,9 +239,9 @@ h1 span {
 }
 
 .button.primary {
-  color: var(--ink);
-  background: var(--gold);
-  box-shadow: 0 0 0 rgba(201, 155, 71, 0.3);
+  color: #183028;
+  background: #d9b45d;
+  box-shadow: 0 0 0 rgba(126, 161, 118, 0.3);
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
@@ -253,7 +257,7 @@ h1 span {
 }
 
 .button.primary:hover {
-  box-shadow: 0 14px 32px rgba(201, 155, 71, 0.26);
+  box-shadow: 0 14px 32px rgba(126, 161, 118, 0.28);
 }
 
 .button.secondary:hover {
@@ -338,7 +342,7 @@ h3 {
 .value-item {
   min-height: 310px;
   padding: clamp(32px, 5vw, 58px);
-  background: var(--white);
+  background: #fbfdf7;
 }
 
 .value-item span {
@@ -362,7 +366,7 @@ h3 {
   width: 100%;
   margin: 0;
   padding: 120px max(18px, calc((100vw - 1180px) / 2));
-  background: #fdfbf4;
+  background: #eef6e8;
 }
 
 .reach-layout {
@@ -385,7 +389,7 @@ h3 {
   padding: 18px;
   border-radius: 8px;
   background:
-    linear-gradient(135deg, rgba(66, 88, 75, 0.11), rgba(201, 155, 71, 0.14)),
+    linear-gradient(135deg, rgba(126, 161, 118, 0.22), rgba(214, 169, 79, 0.11)),
     var(--white);
   box-shadow: var(--shadow);
   overflow: hidden;
@@ -398,7 +402,7 @@ h3 {
   height: 280px;
   right: -130px;
   top: -120px;
-  border: 1px solid rgba(66, 88, 75, 0.22);
+  border: 1px solid rgba(85, 115, 95, 0.22);
   border-radius: 50%;
 }
 
@@ -409,7 +413,7 @@ h3 {
   height: 160px;
   right: -20px;
   top: -60px;
-  border: 1px solid rgba(66, 88, 75, 0.22);
+  border: 1px solid rgba(85, 115, 95, 0.22);
   border-radius: 50%;
 }
 
@@ -419,13 +423,13 @@ h3 {
   padding: 26px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.82);
   transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
 }
 
 .reach-card:hover {
   transform: translateX(8px);
-  border-color: rgba(201, 155, 71, 0.56);
+  border-color: rgba(126, 161, 118, 0.64);
   background: var(--white);
 }
 
@@ -444,7 +448,8 @@ h3 {
   margin: 0;
   padding: 120px max(18px, calc((100vw - 1180px) / 2));
   color: var(--white);
-  background: var(--night);
+  background:
+    linear-gradient(135deg, #274d3a 0%, #315f47 58%, #6f8f69 100%);
 }
 
 .dark-section h2 {
@@ -460,13 +465,14 @@ h3 {
 .feature-grid article {
   min-height: 210px;
   padding: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 8px;
-  background: var(--night-soft);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
 }
 
 .feature-grid p {
-  color: rgba(255, 255, 255, 0.68);
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .section-heading {
@@ -486,7 +492,7 @@ h3 {
   padding: 28px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.48);
+  background: rgba(255, 255, 255, 0.62);
 }
 
 .process-step span {
@@ -505,7 +511,7 @@ h3 {
   width: 100%;
   margin: 0;
   padding: 110px max(18px, calc((100vw - 1180px) / 2));
-  background: #e8e1d2;
+  background: #e4f0dd;
 }
 
 .sample-layout {
@@ -543,7 +549,7 @@ h3 {
   border-radius: 22px;
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.76)),
-    linear-gradient(135deg, #72523d, #1b252a 52%, #111316);
+    linear-gradient(135deg, #7d8f5f, #315441 52%, #173126);
   overflow: hidden;
   position: relative;
 }
@@ -602,7 +608,7 @@ h3 {
   top: 0.62em;
   width: 14px;
   height: 2px;
-  background: var(--clay);
+  background: var(--olive-bright);
 }
 
 .plans {
@@ -620,12 +626,12 @@ h3 {
   padding: 32px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--white);
+  background: #fbfdf7;
 }
 
 .plan-card.featured {
   color: var(--white);
-  background: var(--olive);
+  background: linear-gradient(160deg, #315f47, #6f8f69);
   transform: translateY(-18px);
   box-shadow: var(--shadow);
 }
@@ -668,7 +674,7 @@ h3 {
 details {
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.56);
+  background: rgba(255, 255, 255, 0.68);
 }
 
 summary {
@@ -691,7 +697,8 @@ details p {
   align-items: center;
   padding: 92px max(18px, calc((100vw - 1180px) / 2));
   color: var(--white);
-  background: var(--night);
+  background:
+    linear-gradient(135deg, #315f47 0%, #55735f 100%);
 }
 
 .cta-section h2 {
@@ -708,7 +715,8 @@ details p {
   padding: 22px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 8px;
-  background: var(--night-soft);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
 }
 
 .wide {
@@ -726,8 +734,8 @@ details p {
   justify-content: space-between;
   gap: 20px;
   padding: 28px clamp(18px, 4vw, 56px);
-  color: rgba(255, 255, 255, 0.58);
-  background: #0d0f12;
+  color: rgba(255, 255, 255, 0.72);
+  background: #1f3b2d;
   font-size: 13px;
   font-weight: 800;
 }
