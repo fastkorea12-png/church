@@ -504,6 +504,7 @@ h3 {
 }
 
 .portfolio-showcase {
+  order: 2;
   grid-column: span 2;
   padding: 14px;
   border: 1px solid rgba(85, 115, 95, 0.18);
@@ -515,6 +516,8 @@ h3 {
 }
 
 .portfolio-ranking {
+  order: 3;
+  grid-column: span 1;
   padding: 14px;
   border: 1px solid rgba(85, 115, 95, 0.18);
   border-radius: 8px;
@@ -564,6 +567,7 @@ h3 {
 }
 
 .proof-card {
+  order: 1;
   min-height: 252px;
   padding: 28px;
   border: 1px solid rgba(85, 115, 95, 0.18);
