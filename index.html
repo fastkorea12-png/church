@@ -312,6 +312,44 @@
           <a class="button primary wide" href="mailto:fastkorea12@gmail.com">이메일 문의</a>
           <a class="button secondary wide" href="tel:01077026451">전화&amp;문자 문의</a>
           <p>파일럿 상담과 샘플 제작 문의를 편하게 남겨주세요.</p>
+          <form class="inquiry-form" id="inquiryForm">
+            <div class="form-grid">
+              <label>
+                <span>교회명</span>
+                <input name="churchName" type="text" autocomplete="organization" required />
+              </label>
+              <label>
+                <span>담당자</span>
+                <input name="contactName" type="text" autocomplete="name" required />
+              </label>
+            </div>
+            <div class="form-grid">
+              <label>
+                <span>연락처</span>
+                <input name="phone" type="tel" autocomplete="tel" required />
+              </label>
+              <label>
+                <span>이메일</span>
+                <input name="email" type="email" autocomplete="email" />
+              </label>
+            </div>
+            <label>
+              <span>관심 플랜</span>
+              <select name="plan">
+                <option value="파일럿 상담">파일럿 상담</option>
+                <option value="반짝 리마인드 플랜">반짝 리마인드 플랜</option>
+                <option value="동네 소개 플랜">동네 소개 플랜</option>
+                <option value="작은교회 미디어 플랜">작은교회 미디어 플랜</option>
+              </select>
+            </label>
+            <label>
+              <span>문의 내용</span>
+              <textarea name="message" rows="4" placeholder="교회 상황이나 궁금한 점을 편하게 적어주세요."></textarea>
+            </label>
+            <input name="source" type="hidden" value="landing-page" />
+            <button class="button primary wide" type="submit">문의 남기기</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
         </div>
       </section>
     </main>
